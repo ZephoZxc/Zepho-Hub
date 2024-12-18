@@ -22,21 +22,12 @@ Section:NewButton("Lunax Hub [Key System]", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/Blade%20ball.lua", true))()
 end)
 
-local Tab = Window:NewTab("Fisch")
-
-local Section = Tab:NewSection("Fisch")
-
-
-Section:NewButton("Russian Script", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/thmaus12/fisch/refs/heads/main/scriptmausrb"))()
-end)
-
 local Tab = Window:NewTab("MM2")
 
 local Section = Tab:NewSection("Murder Mystery 2")
 
 
-Section:NewButton("Esp", "ButtonInfo", function()
+Section:NewButton("ESP", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
 end)
 
@@ -70,6 +61,11 @@ Section:NewButton("Nameless Admin", "ButtonInfo", function()
 end)
 
 
+Section:NewButton("Universal Aimbot and ESP", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mick-gordon/Hyper-Escape/main/DeleteMobCheatEngine.lua",true))();
+end)
+
+
 Section:NewButton("Plutonium.lua", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
 end)
@@ -77,14 +73,4 @@ end)
 
 Section:NewButton("Name Esp", "ButtonInfo", function()
     loadstring(game:HttpGet("pastebin.com/raw/ARFjYZ4G"))()
-end)
-
-
-Section:NewButton("Chat Spam [No Bind]", "ButtonInfo", function()
-    loadstring(game:HttpGet("pastebin.com/raw/r6CZaPa5"))()
-end)
-
-
-Section:NewButton("Chat Spam [Y]", "ButtonInfo", function()
-    loadstring(game:HttpGet("pastebin.com/raw/7mAKzeLX"))()
 end)
