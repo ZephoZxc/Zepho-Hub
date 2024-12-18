@@ -1,6 +1,6 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 3.1 Version ❗️")
+print("❗️ Zepho Hub 3.0 Version ❗️")
 
 print("❗️ Zepho Hub By Zepho    ❗️")
 
@@ -13,7 +13,7 @@ local Tab = Window:NewTab("Blade Ball")
 local Section = Tab:NewSection("Blade Ball")
 
 
-Section:NewButton("Plutonium.lua", "ButtonInfo", function()
+Section:NewButton("Plutonium.lua [No Key System]", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
 end)
 
@@ -71,6 +71,6 @@ Section:NewButton("Plutonium.lua", "ButtonInfo", function()
 end)
 
 
-Section:NewButton("Name Esp", "ButtonInfo", function()
+Section:NewButton("Name ESP", "ButtonInfo", function()
     loadstring(game:HttpGet("pastebin.com/raw/ARFjYZ4G"))()
 end)
