@@ -1,0 +1,171 @@
+print("❗️ Zepho Hub is Loaded   ❗️")
+
+print("❗️ Zepho Hub 3.1 Version ❗️")
+
+print("❗️ Zepho Hub By Zepho    ❗️")
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("Zepho Hub Premium :)", "RJTheme8")
+
+local Tab = Window:NewTab("Da Hood")
+
+local Section = Tab:NewSection("Da Hood")
+
+
+Section:NewButton("StarHook", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Dekos-lgbty/dahood/main/starhook"))()
+end)
+
+
+Section:NewButton("Lunar Vip", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZephoHub/Lunar-Vip/refs/heads/main/Lunar%20Vip",true))();
+end)
+
+
+Section:NewButton("SwagMode", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+end)
+
+
+Section:NewButton("TBO", "ButtonInfo", function()
+    loadstring(game:HttpGet('pastebin.com/raw/BuLdpGKv'))()
+end)
+
+
+Section:NewButton("CamLock", "Q", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/vPsAqg8L"))()
+end)
+
+
+Section:NewButton("Mobile CamLock", "ButtonInfo", function()
+    loadstring(game:HttpGet("pastebin.com/raw/FJte5ZcA"))()
+end)
+
+
+Section:NewButton("AntiLock", "Z", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ZxhwBGHC"))()
+end)
+
+
+Section:NewButton("Headless", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/GYt9zkE1"))()
+end)
+
+
+Section:NewButton("Trash Talk #1", "Y", function()
+    loadstring(game:HttpGet("pastebin.com/raw/rjKnVTAj"))()
+end)
+
+
+Section:NewButton("Trash Talk #2", "M", function()
+    loadstring(game:HttpGet("pastebin.com/raw/BjipBDPS"))()
+end)
+
+local Section = Tab:NewSection("Legendary Gun Skin Changer")
+
+
+Section:NewButton("Inferno", "ButtonInfo", function()
+    loadstring(game:HttpGet('pastebin.com/raw/KcmP6D38'))()
+end)
+
+
+Section:NewButton("Galaxy", "ButtonInfo", function()
+    loadstring(game:HttpGet('pastebin.com/raw/DKTgg9Wb'))()
+end)
+
+
+Section:NewButton("Matrix", "ButtonInfo", function()
+    loadstring(game:HttpGet('pastebin.com/uc9pps0F'))()
+end)
+
+
+Section:NewButton("RedDeath", "ButtonInfo", function()
+    loadstring(game:HttpGet('pastebin.com/raw/4ah5GbkM'))()
+end)
+
+
+Section:NewButton("GoldGlory", "ButtonInfo", function()
+    loadstring(game:HttpGet('pastebin.com/raw/SK2LXs20'))()
+end)
+
+local Tab = Window:NewTab("Blade Ball")
+
+local Section = Tab:NewSection("Blade Ball")
+
+
+Section:NewButton("Plutonium.lua", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
+end)
+
+
+Section:NewButton("Lunax Hub [Key System]", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/Blade%20ball.lua", true))()
+end)
+
+local Tab = Window:NewTab("Fisch")
+
+local Section = Tab:NewSection("Fisch")
+
+
+Section:NewButton("Russian Script", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/thmaus12/fisch/refs/heads/main/scriptmausrb"))()
+end)
+
+local Tab = Window:NewTab("MM2")
+
+local Section = Tab:NewSection("Murder Mystery 2")
+
+
+Section:NewButton("Esp", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
+end)
+
+
+Section:NewButton("Vertex", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring"))("t.me/arceusxscripts")
+end)
+
+
+Section:NewButton("Yarhm", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+end)
+
+
+Section:NewButton("Xhub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2'))()
+end)
+
+local Tab = Window:NewTab("Other")
+
+local Section = Tab:NewSection("Other")
+
+
+Section:NewButton("Infinite Yield", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+
+Section:NewButton("Nameless Admin", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+end)
+
+
+Section:NewButton("Plutonium.lua", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
+end)
+
+
+Section:NewButton("Name Esp", "ButtonInfo", function()
+    loadstring(game:HttpGet("pastebin.com/raw/ARFjYZ4G"))()
+end)
+
+
+Section:NewButton("Chat Spam [No Bind]", "ButtonInfo", function()
+    loadstring(game:HttpGet("pastebin.com/raw/r6CZaPa5"))()
+end)
+
+
+Section:NewButton("Chat Spam [Y]", "ButtonInfo", function()
+    loadstring(game:HttpGet("pastebin.com/raw/7mAKzeLX"))()
+end)
