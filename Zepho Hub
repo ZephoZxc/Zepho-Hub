@@ -8,6 +8,20 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Roboj
 
 local Window = Library.CreateLib("Zepho Hub Premium :)", "RJTheme8")
 
+local Tab = Window:NewTab("Counter Blox")
+
+local Section = Tab:NewSection("Counter Blox")
+
+
+Section:NewButton("Universal Aimbot and ESP", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mick-gordon/Hyper-Escape/main/DeleteMobCheatEngine.lua",true))();
+end)
+
+
+Section:NewButton("jaran.vip", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fliskScript/jaran.vip/main/free.lua"))()
+end)
+
 local Tab = Window:NewTab("Blade Ball")
 
 local Section = Tab:NewSection("Blade Ball")
