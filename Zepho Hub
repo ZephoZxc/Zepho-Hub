@@ -46,6 +46,15 @@ Section:NewButton("Xhub", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2'))()
 end)
 
+local Tab = Window:NewTab("Troll")
+
+local Section = Tab:NewSection("R6")
+
+
+Section:NewButton("Jerk Off", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
+end)
+
 local Tab = Window:NewTab("Other")
 
 local Section = Tab:NewSection("Other")
