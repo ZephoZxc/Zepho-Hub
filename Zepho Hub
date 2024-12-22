@@ -1,6 +1,6 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 3.0 Version ❗️")
+print("❗️ Zepho Hub 1.7 Version ❗️")
 
 print("❗️ Zepho Hub By Zepho    ❗️")
 
@@ -89,8 +89,8 @@ Section:NewButton("Universal Aimbot and ESP", "ButtonInfo", function()
 end)
 
 
-Section:NewButton("Plutonium.lua", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
+Section:NewButton("NukeVsCity", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
 end)
 
 
