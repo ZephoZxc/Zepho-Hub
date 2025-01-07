@@ -1,6 +1,6 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 1.7 Version ❗️")
+print("❗️ Zepho Hub 1.6 Version ❗️")
 
 print("❗️ Zepho Hub By Zepho    ❗️")
 
@@ -34,6 +34,15 @@ end)
 
 Section:NewButton("Lunax Hub [Key System]", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/Blade%20ball.lua", true))()
+end)
+
+local Tab = Window:NewTab("Mad City")
+
+local Section = Tab:NewSection("Mad City: Chapter 1")
+
+
+Section:NewButton("Lads V6 unofficial Revamp", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/D4puG4Q2", true))()
 end)
 
 local Tab = Window:NewTab("MM2")
