@@ -1,6 +1,6 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 2.0 Version ❗️")
+print("❗️ Zepho Hub 2.1 Version ❗️")
 
 print("❗️ Zepho Hub By Zepho    ❗️")
 
@@ -39,6 +39,11 @@ end)
 
 Section:NewButton("Hitbox Expander", "ButtonInfo", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
+end)
+
+
+Section:NewButton("Tryhard Animation", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/DJjfbyxb"))()
 end)
 
 
