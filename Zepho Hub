@@ -1,6 +1,6 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 1.7 Version ❗️")
+print("❗️ Zepho Hub 1.9 Version ❗️")
 
 print("❗️ Zepho Hub By Zepho    ❗️")
 
@@ -20,6 +20,30 @@ end)
 
 Section:NewButton("jaran.vip", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fliskScript/jaran.vip/main/free.lua"))()
+end)
+
+local Tab = Window:NewTab("Da Hood")
+
+local Section = Tab:NewSection("Da Hood")
+
+
+Section:NewButton("StarHook", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BotTele2/notbeam/refs/heads/main/starhook.lua"))()
+end)
+
+
+Section:NewButton("Hitbox Expander", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
+end)
+
+
+Section:NewButton("Anti Fling", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/0LUKXaHD"))()
+end)
+
+
+Section:NewButton("Resolver", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/rwu09Zx8"))()
 end)
 
 local Tab = Window:NewTab("Blade Ball")
