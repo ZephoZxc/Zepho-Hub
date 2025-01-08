@@ -1,6 +1,6 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 1.9 Version ❗️")
+print("❗️ Zepho Hub 2.0 Version ❗️")
 
 print("❗️ Zepho Hub By Zepho    ❗️")
 
@@ -27,6 +27,11 @@ local Tab = Window:NewTab("Da Hood")
 local Section = Tab:NewSection("Da Hood")
 
 
+Section:NewButton("Lunar.Vip", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZephoZxc/lunar/refs/heads/main/lunar"))()
+end)
+
+
 Section:NewButton("StarHook", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BotTele2/notbeam/refs/heads/main/starhook.lua"))()
 end)
@@ -38,7 +43,7 @@ end)
 
 
 Section:NewButton("Anti Fling", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/0LUKXaHD"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/2fhsRVz3"))()
 end)
 
 
