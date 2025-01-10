@@ -1,6 +1,6 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 2.1 Version ❗️")
+print("❗️ Zepho Hub 2.2 Version ❗️")
 
 print("❗️ Zepho Hub By Zepho    ❗️")
 
@@ -42,6 +42,11 @@ Section:NewButton("Tryhard Animation", "ButtonInfo", function()
 end)
 
 
+Section:NewButton("Admin Detector", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/kDGggSdV"))()
+end)
+
+
 Section:NewButton("Anti Fling", "ButtonInfo", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/2fhsRVz3"))()
 end)
@@ -49,6 +54,11 @@ end)
 
 Section:NewButton("CamLock", "Q", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/MTzKCAc0"))()
+end)
+
+
+Section:NewButton("AntiLock", "M", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/32ghPS9S"))()
 end)
 
 
