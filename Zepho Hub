@@ -2,8 +2,6 @@ print("❗️ Zepho Hub is Loaded   ❗️")
 
 print("❗️ Zepho Hub 2.2 Version ❗️")
 
-print("❗️ Zepho Hub By Zepho    ❗️")
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
 local Window = Library.CreateLib("Zepho Hub Premium :)", "RJTheme8")
