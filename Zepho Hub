@@ -1,24 +1,10 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 2.2 Version ❗️")
+print("❗️ Zepho Hub 1.9 Version ❗️")
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
 local Window = Library.CreateLib("Zepho Hub Premium :)", "RJTheme8")
-
-local Tab = Window:NewTab("Counter Blox")
-
-local Section = Tab:NewSection("Counter Blox")
-
-
-Section:NewButton("Universal Aimbot and ESP", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mick-gordon/Hyper-Escape/main/DeleteMobCheatEngine.lua",true))();
-end)
-
-
-Section:NewButton("jaran.vip", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fliskScript/jaran.vip/main/free.lua"))()
-end)
 
 local Tab = Window:NewTab("Da Hood")
 
@@ -78,15 +64,6 @@ Section:NewButton("Lunax Hub [Key System]", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/Blade%20ball.lua", true))()
 end)
 
-local Tab = Window:NewTab("Mad City")
-
-local Section = Tab:NewSection("Mad City: Chapter 1")
-
-
-Section:NewButton("Lads V6 unofficial Revamp", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/D4puG4Q2", true))()
-end)
-
 local Tab = Window:NewTab("MM2")
 
 local Section = Tab:NewSection("Murder Mystery 2")
@@ -109,15 +86,6 @@ end)
 
 Section:NewButton("Xhub", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2'))()
-end)
-
-local Tab = Window:NewTab("Troll")
-
-local Section = Tab:NewSection("R6")
-
-
-Section:NewButton("Jerk Off", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
 end)
 
 local Tab = Window:NewTab("Other")
@@ -146,5 +114,5 @@ end)
 
 
 Section:NewButton("Name ESP", "ButtonInfo", function()
-    loadstring(game:HttpGet("pastebin.com/raw/ARFjYZ4G"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZephoZxc/Name/refs/heads/main/Name"))()
 end)
