@@ -35,6 +35,11 @@ Section:NewButton("Admin Detector", "ButtonInfo", function()
 end)
 
 
+Section:NewButton("Trash Talk", "Y", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/q5dqUNsP"))()
+end)
+
+
 Section:NewButton("Anti Fling", "ButtonInfo", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/2fhsRVz3"))()
 end)
