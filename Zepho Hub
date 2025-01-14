@@ -1,10 +1,14 @@
+local b = Instance.new("BindableFunction")
+function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("discord.gg/Y3fadEbh5M") end end end
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Join discord server", Text = "This is my discord server :D", Duration = 5, Callback = b, Button1 = "Copy Link"})
+
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 1.9 Version ❗️")
+print("❗️ Zepho Hub 2.0 Version ❗️")
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
-local Window = Library.CreateLib("Zepho Hub Premium :)", "RJTheme8")
+local Window = Library.CreateLib("Zepho Hub Premium :D", "RJTheme8")
 
 local Tab = Window:NewTab("Da Hood")
 
@@ -91,6 +95,11 @@ end)
 local Tab = Window:NewTab("Other")
 
 local Section = Tab:NewSection("Other")
+
+
+Section:NewKeybind("ToggleUI", "KeybindInfo", Enum.KeyCode.F, function()
+    Library:ToggleUI()
+end)
 
 
 Section:NewButton("Infinite Yield", "ButtonInfo", function()
