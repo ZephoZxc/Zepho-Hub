@@ -54,16 +54,16 @@ Section:NewButton("AntiLock", "M", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/32ghPS9S"))()
 end)
 
+
+Section:NewButton("Resolver", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/rwu09Zx8"))()
+end)
+
 local Section = Tab:NewSection("Azure Modded")
 
 
 Section:NewButton("Azure Modded [Only Da Hood Copyes]", "ButtonInfo", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/2fhsRVz3"))()
-end)
-
-
-Section:NewButton("Resolver", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/rwu09Zx8"))()
 end)
 
 local Tab = Window:NewTab("Blade Ball")
