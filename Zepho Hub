@@ -4,7 +4,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Join discord
 
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 2.0 Version ❗️")
+print("❗️ Zepho Hub 2.1 Version ❗️")
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
@@ -52,6 +52,13 @@ end)
 
 Section:NewButton("AntiLock", "M", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/32ghPS9S"))()
+end)
+
+local Section = Tab:NewSection("Azure Modded")
+
+
+Section:NewButton("Azure Modded [Only Da Hood Copyes]", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/2fhsRVz3"))()
 end)
 
 
