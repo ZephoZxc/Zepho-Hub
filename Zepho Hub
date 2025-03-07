@@ -4,11 +4,25 @@ game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Join discord
 
 print("❗️ Zepho Hub is Loaded   ❗️")
 
-print("❗️ Zepho Hub 2.1 Version ❗️")
+print("❗️ Zepho Hub 1.2 Version ❗️")
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
 local Window = Library.CreateLib("Zepho Hub Premium :D", "RJTheme8")
+
+local Tab = Window:NewTab("Fling Things")
+
+local Section = Tab:NewSection("Fling Things and People")
+
+
+Section:NewButton("UI", "ButtonInfo", function()
+    loadstring(game:HttpGet("loadstring(game:HttpGet("https://you.whimper.xyz/blitz"))()"))()
+end)
+
+
+Section:NewButton("Super Punch UI", "ButtonInfo", function()
+    loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/1itzperson/scripts/refs/heads/main/Fling%20Things%20and%20People.lua'))()"))()
+end)
 
 local Tab = Window:NewTab("Da Hood")
 
@@ -57,13 +71,6 @@ end)
 
 Section:NewButton("Resolver", "ButtonInfo", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/rwu09Zx8"))()
-end)
-
-local Section = Tab:NewSection("Azure Modded")
-
-
-Section:NewButton("Azure Modded [Only Da Hood Copyes]", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/2fhsRVz3"))()
 end)
 
 local Tab = Window:NewTab("Blade Ball")
