@@ -1,146 +1,56 @@
-local b = Instance.new("BindableFunction")
-function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("discord.gg/Y3fadEbh5M") end end end
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Join discord server", Text = "This is my discord server :D", Duration = 5, Callback = b, Button1 = "Copy Link"})
-
 print("❗️ Zepho Hub is Loaded   ❗️")
+print("❗️ Zepho Hub 0.6 Version ❗️")
 
-print("❗️ Zepho Hub 1.2 Version ❗️")
+local b = Instance.new("BindableFunction")
+function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("https://discord.gg/Y3fadEbh5M") end end end
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "ZephoHub", Text = "Join discord server", Duration = 5, Callback = b, Button1 = "Copy Link"})
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
-
-local Window = Library.CreateLib("Zepho Hub Premium :D", "RJTheme8")
-
-local Tab = Window:NewTab("Fling Things")
-
-local Section = Tab:NewSection("Fling Things and People")
-
-
-Section:NewButton("UI", "ButtonInfo", function()
-    loadstring(game:HttpGet("loadstring(game:HttpGet("https://you.whimper.xyz/blitz"))()"))()
-end)
-
-
-Section:NewButton("Super Punch UI", "ButtonInfo", function()
-    loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/1itzperson/scripts/refs/heads/main/Fling%20Things%20and%20People.lua'))()"))()
-end)
-
-local Tab = Window:NewTab("Da Hood")
-
-local Section = Tab:NewSection("Da Hood")
-
-
-Section:NewButton("StarHook", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BotTele2/notbeam/refs/heads/main/starhook.lua"))()
-end)
-
-
-Section:NewButton("Hitbox Expander", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
-end)
-
-
-Section:NewButton("Tryhard Animation", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/DJjfbyxb"))()
-end)
-
-
-Section:NewButton("Admin Detector", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/kDGggSdV"))()
-end)
-
-
-Section:NewButton("Trash Talk", "Y", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/q5dqUNsP"))()
-end)
-
-
-Section:NewButton("Anti Fling", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/2fhsRVz3"))()
-end)
-
-
-Section:NewButton("CamLock", "Q", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/MTzKCAc0"))()
-end)
-
-
-Section:NewButton("AntiLock", "M", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/32ghPS9S"))()
-end)
-
-
-Section:NewButton("Resolver", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/rwu09Zx8"))()
-end)
-
-local Tab = Window:NewTab("Blade Ball")
-
-local Section = Tab:NewSection("Blade Ball")
-
-
-Section:NewButton("Plutonium.lua [No Key System]", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
-end)
-
-
-Section:NewButton("Lunax Hub [Key System]", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Universall/refs/heads/main/Blade%20ball.lua", true))()
-end)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("ZephoHub Premium :D", "DarkTheme")
 
 local Tab = Window:NewTab("MM2")
-
 local Section = Tab:NewSection("Murder Mystery 2")
 
-
-Section:NewButton("ESP", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
+Section:NewButton("Vertex", "Universal MM2 Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()
 end)
 
+local Section = Tab:NewSection("Player")
 
-Section:NewButton("Vertex", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring"))("t.me/arceusxscripts")
+Section:NewButton("Inf Jump", "OMG Jump Jump", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/WUquqYN0", true))()
 end)
-
-
-Section:NewButton("Yarhm", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+Section:NewSlider("WalkSpeed", "Super Ultra Speed", 500, 0, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
-
-
-Section:NewButton("Xhub", "ButtonInfo", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2'))()
+Section:NewSlider("JumpPower", "Super Ultra Jump", 500, 0, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
 local Tab = Window:NewTab("Other")
+local Section = Tab:NewSection("UI Settings")
 
-local Section = Tab:NewSection("Other")
-
-
-Section:NewKeybind("ToggleUI", "KeybindInfo", Enum.KeyCode.F, function()
-    Library:ToggleUI()
+Section:NewKeybind("ToggleUI", "ToggleUI", Enum.KeyCode.V, function()
+	Library:ToggleUI()
 end)
 
+local Section = Tab:NewSection("Admin")
 
-Section:NewButton("Infinite Yield", "ButtonInfo", function()
+Section:NewButton("Infinite Yield Admin", "Universal Admin", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
-
-
-Section:NewButton("Nameless Admin", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+Section:NewButton("Nameless Admin", "Universal Admin", function()
+    loadstring(game:HttpGet("https://github.com/FilteringEnabled/NamelessAdmin/blob/main/Source?raw=true"))()
 end)
 
+local Section = Tab:NewSection("Aimbot and ESP")
 
-Section:NewButton("Universal Aimbot and ESP", "ButtonInfo", function()
+Section:NewButton("CheatEngine", "Universal Aimbot and ESP", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Mick-gordon/Hyper-Escape/main/DeleteMobCheatEngine.lua",true))();
 end)
 
+local Section = Tab:NewSection("Hub for many games")
 
-Section:NewButton("NukeVsCity", "ButtonInfo", function()
+Section:NewButton("NukeVsCity", "Universal Hub for many games", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
-end)
-
-
-Section:NewButton("Name ESP", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZephoZxc/Name/refs/heads/main/Name"))()
 end)
