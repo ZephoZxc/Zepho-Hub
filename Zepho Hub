@@ -12,7 +12,7 @@ local Tab = Window:NewTab("Da Hood")
 local Section = Tab:NewSection("Da Hood")
 
 Section:NewButton("StarHook", "Universal Da Hood Script", function()
-    loadstring(game:HttpGet('https://github.com/ZephoZxc/StarHook/blob/main/StarHook'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ZephoZxc/StarHook/refs/heads/main/StarHook'))()
 end)
 
 local Tab = Window:NewTab("MM2")
