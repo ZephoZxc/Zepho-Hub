@@ -1,5 +1,5 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
-print("❗️ Zepho Hub 0.6 Version ❗️")
+print("❗️ Zepho Hub 0.7 Version ❗️")
 
 local b = Instance.new("BindableFunction")
 function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("https://discord.gg/Y3fadEbh5M") end end end
@@ -53,4 +53,10 @@ local Section = Tab:NewSection("Hub for many games")
 
 Section:NewButton("NukeVsCity", "Universal Hub for many games", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
+end)
+
+local Section = Tab:NewSection("Free Animation")
+
+Section:NewButton("Free Animation", "Free Animation", function()
+    loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
 end)
