@@ -1,5 +1,5 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
-print("❗️ Zepho Hub 0.9 Version ❗️")
+print("❗️ Zepho Hub 1.0 Version ❗️")
 
 local b = Instance.new("BindableFunction")
 function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("https://discord.gg/Y3fadEbh5M") end end end
@@ -14,6 +14,20 @@ local Section = Tab:NewSection("Da Hood")
 Section:NewButton("StarHook", "Universal Da Hood Script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ZephoZxc/StarHook/refs/heads/main/StarHook'))()
 end)
+Section:NewButton("Hitbox Expander", "Hitbox Editor", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
+end)
+
+local Section = Tab:NewSection("Hitbox No UI PlayerHumanoid.RootPart")
+
+Section:NewButton("Hitbox [5]", "PlayerHumanoid.RootPart", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4n4BttXb"))()
+end)
+Section:NewButton("Hitbox [10]", "PlayerHumanoid.RootPart", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/s4Y0692S"))()
+end)
+
+local Section = Tab:NewSection("Hitbox No UI Head [Soon]")
 
 local Tab = Window:NewTab("MM2")
 local Section = Tab:NewSection("Murder Mystery 2")
