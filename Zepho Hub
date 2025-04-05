@@ -27,8 +27,6 @@ Section:NewButton("Hitbox [10]", "PlayerHumanoid.RootPart", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/s4Y0692S"))()
 end)
 
-local Section = Tab:NewSection("Hitbox No UI Head [Soon]")
-
 local Tab = Window:NewTab("MM2")
 local Section = Tab:NewSection("Murder Mystery 2")
 
