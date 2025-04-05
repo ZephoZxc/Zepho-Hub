@@ -56,7 +56,7 @@ local Section = Tab:NewSection("Player")
 Section:NewButton("Inf Jump", "OMG Jump Jump", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/WUquqYN0", true))()
 end)
-Section:NewSlider("WalkSpeed [Recommended 16-25]", "Super Ultra Speed", 100, 0, function(s)
+Section:NewSlider("WalkSpeed", "Recommended 16-25", 100, 0, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 Section:NewSlider("JumpPower", "Super Ultra Jump", 100, 0, function(s)
