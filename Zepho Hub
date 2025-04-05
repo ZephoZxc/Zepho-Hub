@@ -20,13 +20,13 @@ end)
 Section:NewButton("Hitbox Expander", "Hitbox Editor", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
 end)
+Section:NewButton("AntiV3 [Key System]", "Universal Da Hood Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/flanchhh/Antiv3/refs/heads/main/LoaderAntiv3"))()
+end)
 Section:NewButton("AntiV2", "Universal Da Hood Script", function()
     getgenv()._ = " Anti V2 IF YOU BOUGHT THIS YOU HAVE BEEN SCAMMED /                      https://discord.gg/antiv2 "
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/flanchhh/AntiV2/refs/heads/main/Anti%20v2.lua"))()
-end)
-Section:NewButton("AntiV3 [Key System]", "Universal Da Hood Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/flanchhh/Antiv3/refs/heads/main/LoaderAntiv3"))()
 end)
 Section:NewButton("TBO", "Universal Da Hood Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript"))();
