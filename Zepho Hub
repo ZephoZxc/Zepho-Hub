@@ -1,5 +1,5 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
-print("❗️ Zepho Hub 1.0 Version ❗️")
+print("❗️ Zepho Hub 1.1 Version ❗️")
 
 local b = Instance.new("BindableFunction")
 function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("https://discord.gg/Y3fadEbh5M") end end end
@@ -11,11 +11,25 @@ local Window = Library.CreateLib("ZephoHub Premium :D", "DarkTheme")
 local Tab = Window:NewTab("Da Hood")
 local Section = Tab:NewSection("Da Hood")
 
+Section:NewButton("Chants", "Universal Da Hood Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal31312/chants/refs/heads/main/chants.lua"))()
+end)
 Section:NewButton("StarHook", "Universal Da Hood Script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ZephoZxc/StarHook/refs/heads/main/StarHook'))()
 end)
 Section:NewButton("Hitbox Expander", "Hitbox Editor", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
+end)
+Section:NewButton("AntiV2", "Universal Da Hood Script", function()
+    getgenv()._ = " Anti V2 IF YOU BOUGHT THIS YOU HAVE BEEN SCAMMED /                      https://discord.gg/antiv2 "
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/flanchhh/AntiV2/refs/heads/main/Anti%20v2.lua"))()
+end)
+Section:NewButton("AntiV3 [Key System]", "Universal Da Hood Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/flanchhh/Antiv3/refs/heads/main/LoaderAntiv3"))()
+end)
+Section:NewButton("TBO", "Universal Da Hood Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript"))();
 end)
 
 local Section = Tab:NewSection("Hitbox No UI PlayerHumanoid.RootPart")
