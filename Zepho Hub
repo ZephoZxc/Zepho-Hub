@@ -1,5 +1,5 @@
 print("❗️ Zepho Hub is Loaded   ❗️")
-print("❗️ Zepho Hub 1.1 Version ❗️")
+print("❗️ Zepho Hub 1.2 Version ❗️")
 
 local b = Instance.new("BindableFunction")
 function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("https://discord.gg/Y3fadEbh5M") end end end
@@ -44,6 +44,9 @@ end)
 local Tab = Window:NewTab("MM2")
 local Section = Tab:NewSection("Murder Mystery 2")
 
+Section:NewButton("Foggy Hub", "Universal MM2 Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/mm2-piano-reborn/refs/heads/main/scr"))()
+end)
 Section:NewButton("Vertex", "Universal MM2 Script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()
 end)
