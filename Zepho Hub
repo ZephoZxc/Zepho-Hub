@@ -1,5 +1,5 @@
 print("❗️ ZephoHub is Loaded    ❗️")
-print("❗️ ZephoHub Premium V1.2 ❗️")
+print("❗️ ZephoHub Premium V1.3 ❗️")
 
 local b = Instance.new("BindableFunction")
 function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("https://discord.gg/Y3fadEbh5M") end end end
@@ -36,6 +36,13 @@ Section:NewButton("Hitbox [5]", "PlayerHumanoid.RootPart", function()
 end)
 Section:NewButton("Hitbox [10]", "PlayerHumanoid.RootPart", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/s4Y0692S"))()
+end)
+
+local Tab = Window:NewTab("Blox Fruits")
+local Section = Tab:NewSection("Blox Fruits")
+
+Section:NewButton("Zenith Hub", "Universal Blox Fruits Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
 end)
 
 local Tab = Window:NewTab("MM2")
