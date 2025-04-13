@@ -44,7 +44,9 @@ local CallbackButton = TabOne:Button({
 	end
 })
 
-
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+end)
 
 CallbackButton:SetText("Azure Modded") 
 
