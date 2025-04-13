@@ -1,111 +1,252 @@
-print("❗️ ZephoHub is Loaded    ❗️")
-print("❗️ ZephoHub Premium V1.3 ❗️")
+local Library = loadstring(
+    game:HttpGetAsync("https://raw.githubusercontent.com/focat69/gamesense/refs/heads/main/source?t=" .. tostring(tick()))
+)()
 
-local b = Instance.new("BindableFunction")
-function b.OnInvoke(response) if response == "Copy Link" then if setclipboard then setclipboard("https://discord.gg/Y3fadEbh5M") end end end
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "ZephoHub", Text = "Join discord server", Duration = 5, Callback = b, Button1 = "Copy Link"})
+local Window = Library:New({
+    Name = "ZephoHub Premium V1.3",
+    Padding = 5
+})
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("ZephoHub Premium V1.3", "DarkTheme")
+local TabOne = Window:CreateTab({
+    Name = "Da Hood"
+})
 
-local Tab = Window:NewTab("Da Hood")
-local Section = Tab:NewSection("Da Hood")
+local CallbackButton = TabOne:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
 
-Section:NewButton("Chants", "Universal Da Hood Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal31312/chants/refs/heads/main/chants.lua"))()
-end)
-Section:NewButton("StarHook", "Universal Da Hood Script", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/ZephoZxc/StarHook/refs/heads/main/StarHook'))()
-end)
-Section:NewButton("Hitbox Expander", "Hitbox Editor", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
-end)
-Section:NewButton("AntiV2", "Universal Da Hood Script", function()
-    getgenv()._ = " Anti V2 IF YOU BOUGHT THIS YOU HAVE BEEN SCAMMED /                      https://discord.gg/antiv2 "
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/flanchhh/AntiV2/refs/heads/main/Anti%20v2.lua"))()
-end)
-Section:NewButton("TBO", "Universal Da Hood Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript"))();
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ZephoZxc/StarHook/refs/heads/main/StarHook'))()
 end)
 
-local Section = Tab:NewSection("Hitbox No UI PlayerHumanoid.RootPart")
+CallbackButton:SetText("StarHook") 
 
-Section:NewButton("Hitbox [5]", "PlayerHumanoid.RootPart", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/4n4BttXb"))()
-end)
-Section:NewButton("Hitbox [10]", "PlayerHumanoid.RootPart", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/s4Y0692S"))()
-end)
+local CallbackButton = TabOne:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
 
-local Tab = Window:NewTab("Blox Fruits")
-local Section = Tab:NewSection("Blox Fruits")
-
-Section:NewButton("Zenith Hub", "Universal Blox Fruits Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
 end)
 
-local Tab = Window:NewTab("MM2")
-local Section = Tab:NewSection("Murder Mystery 2")
+CallbackButton:SetText("Hitbox Expander") 
 
-Section:NewButton("Foggy Hub", "Universal MM2 Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/mm2-piano-reborn/refs/heads/main/scr"))()
-end)
-Section:NewButton("Vertex", "Universal MM2 Script", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()
-end)
+local CallbackButton = TabOne:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
 
-local Section = Tab:NewSection("Player")
-
-Section:NewButton("Inf Jump", "OMG Jump Jump", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/WUquqYN0", true))()
-end)
-Section:NewSlider("WalkSpeed", "Recommended 16-25", 100, 0, function(s)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-Section:NewSlider("JumpPower", "Super Ultra Jump", 100, 0, function(s)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript"))();
 end)
 
-local Tab = Window:NewTab("Other")
-local Section = Tab:NewSection("UI Settings")
+CallbackButton:SetText("TBO") 
 
-Section:NewKeybind("ToggleUI", "ToggleUI", Enum.KeyCode.V, function()
-	Library:ToggleUI()
-end)
-Section:NewButton("Watermark", "Watermark", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/Ucb8H2i8", true))()
-end)
+local ExampleLabel = TabOne:Label({
+    Message = "Hitbox No UI PlayerHumanoid.RootPart"
+})
 
-local Section = Tab:NewSection("Admin")
+local CallbackButton = TabOne:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
 
-Section:NewButton("Infinite Yield Admin", "Universal Admin", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-Section:NewButton("Nameless Admin", "Universal Admin", function()
-    loadstring(game:HttpGet("https://github.com/FilteringEnabled/NamelessAdmin/blob/main/Source?raw=true"))()
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/4n4BttXb"))();
 end)
 
-local Section = Tab:NewSection("Aimbot and ESP")
+CallbackButton:SetText("Hitbox [5]") 
 
-Section:NewButton("CheatEngine", "Universal Aimbot and ESP", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mick-gordon/Hyper-Escape/main/DeleteMobCheatEngine.lua",true))();
+local CallbackButton = TabOne:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/s4Y0692S"))()
 end)
 
-local Section = Tab:NewSection("Hub for many games")
+CallbackButton:SetText("Hitbox [10]")
 
-Section:NewButton("NukeVsCity", "Universal Hub for many games", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
+local TabTwo = Window:CreateTab({
+    Name = "Blox Fruits"
+})
+
+local CallbackButton = TabTwo:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
 end)
 
-local Section = Tab:NewSection("Free Animation")
+CallbackButton:SetText("Zenith Hub")
 
-Section:NewButton("Free Animation", "Free Animation", function()
-    loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
+local TabThree = Window:CreateTab({
+    Name = "MM2"
+})
+
+local CallbackButton = TabThree:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/mm2-piano-reborn/refs/heads/main/scr"))()
 end)
 
-local Section = Tab:NewSection("ChatScripts")
+CallbackButton:SetText("Foggy Hub")
 
-Section:NewButton("Trash Talk", "KeyBind [Y]", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/q5dqUNsP"))()
+local CallbackButton = TabThree:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()
 end)
+
+CallbackButton:SetText("Vertex")
+
+local ExampleLabel = TabThree:Label({
+    Message = "Player"
+})
+
+local CallbackButton = TabThree:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/WUquqYN0", true))()
+end)
+
+CallbackButton:SetText("Inf Jump")
+
+local TabFour = Window:CreateTab({
+    Name = "Other"
+})
+
+local ExampleLabel = TabFour:Label({
+    Message = "Admin"
+})
+
+local CallbackButton = TabFour:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+CallbackButton:SetText("Infinite Yield Admin")
+
+local CallbackButton = TabFour:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://github.com/FilteringEnabled/NamelessAdmin/blob/main/Source?raw=true"))()
+end)
+
+CallbackButton:SetText("Nameless Admin")
+
+local ExampleLabel = TabFour:Label({
+    Message = "Aimbot and ESP"
+})
+
+local CallbackButton = TabFour:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mick-gordon/Hyper-Escape/main/DeleteMobCheatEngine.lua",true))();
+end)
+
+CallbackButton:SetText("CheatEngine")
+
+local ExampleLabel = TabFour:Label({
+    Message = "Hub for many games"
+})
+
+local CallbackButton = TabFour:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
+end)
+
+CallbackButton:SetText("NukeVsCity")
+
+local ExampleLabel = TabFour:Label({
+    Message = "Free Animation"
+})
+
+local CallbackButton = TabFour:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
+end)
+
+CallbackButton:SetText("Free Animation")
+
+local ExampleLabel = TabFour:Label({
+    Message = "ChatScripts"
+})
+
+local CallbackButton = TabFour:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/q5dqUNsP"))()
+end)
+
+CallbackButton:SetText("Trash Talk")
+
+Library:Notify({
+    Description = "Script loaded successfully!",
+    Duration = 3
+})
