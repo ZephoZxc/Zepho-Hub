@@ -22,7 +22,7 @@ CallbackButton:SetCallback(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/ZephoZxc/StarHook/refs/heads/main/StarHook'))()
 end)
 
-CallbackButton:SetText("StarHook") 
+CallbackButton:SetText("StarHook")
 
 local CallbackButton = TabOne:Button({
     Name = "I will be renamed",
@@ -34,6 +34,8 @@ local CallbackButton = TabOne:Button({
 CallbackButton:SetCallback(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
 end)
+
+CallbackButton:SetText("Hitbox Expander") 
 
 local CallbackButton = TabOne:Button({
     Name = "I will be renamed",
@@ -47,8 +49,6 @@ CallbackButton:SetCallback(function()
 end)
 
 CallbackButton:SetText("Azure Modded") 
-
-CallbackButton:SetText("Hitbox Expander") 
 
 local CallbackButton = TabOne:Button({
     Name = "I will be renamed",
