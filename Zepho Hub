@@ -35,6 +35,19 @@ CallbackButton:SetCallback(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/hyDjCssf"))()
 end)
 
+local CallbackButton = TabOne:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+end)
+
+CallbackButton:SetText("Azure Modded") 
+
 CallbackButton:SetText("Hitbox Expander") 
 
 local CallbackButton = TabOne:Button({
