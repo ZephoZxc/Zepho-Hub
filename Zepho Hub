@@ -3,7 +3,7 @@ local Library = loadstring(
 )()
 
 local Window = Library:New({
-    Name = "ZephoHub Premium V1.4",
+    Name = "ZephoHub Premium V1.3",
     Padding = 5
 })
 
