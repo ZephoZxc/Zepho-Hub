@@ -3,7 +3,7 @@ local Library = loadstring(
 )()
 
 local Window = Library:New({
-    Name = "ZephoHub Premium V1.3",
+    Name = "ZephoHub Premium V1.4",
     Padding = 5
 })
 
@@ -62,6 +62,19 @@ CallbackButton:SetCallback(function()
 end)
 
 CallbackButton:SetText("Headshots.cc")
+
+local CallbackButton = TabOne:Button({
+    Name = "I will be renamed",
+    Callback = function()
+		print("I was clicked!")
+	end
+})
+
+CallbackButton:SetCallback(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/yuvic123/SKIDO-V3/refs/heads/main/%40Siom4i_"))()
+end)
+
+CallbackButton:SetText("Skido.gg") 
 
 local CallbackButton = TabOne:Button({
     Name = "I will be renamed",
