@@ -119,23 +119,6 @@ end)
 
 CallbackButton:SetText("Hitbox [10]")
 
-local TabTwo = Window:CreateTab({
-    Name = "Blox Fruits"
-})
-
-local CallbackButton = TabTwo:Button({
-    Name = "I will be renamed",
-    Callback = function()
-		print("I was clicked!")
-	end
-})
-
-CallbackButton:SetCallback(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
-end)
-
-CallbackButton:SetText("Zenith Hub")
-
 local TabThree = Window:CreateTab({
     Name = "MM2"
 })
